@@ -1,0 +1,185 @@
+🧭 PROJECT PROMPT — Claire Quest (Romantic Scavenger Website)
+
+Build a mobile-first Next.js 14 + TailwindCSS web app called “Claire Quest”, designed as a romantic treasure hunt.
+Use the following exact creative and functional specifications.
+
+🎨 Design & Mood
+
+Theme: Cozy, romantic, playful, slightly nerdy.
+
+Inspiration: Taylor Swift piano covers, soft pastel leaves drifting, animated text.
+
+Color Palette:
+
+Plum #83425B
+
+Mauve #BBB3C8
+
+Dusty Blue #A1CBDB
+
+Rose #E59EA9
+
+Blush #FBB9CB
+
+Typography:
+
+Headings: Rounded friendly display (e.g., “Quicksand”, “Baloo 2”).
+
+Body: “Inter”.
+
+Libraries:
+
+react-bits for animated text and backgrounds.
+
+framer-motion for fades and sparkle animations.
+
+howler for background audio.
+
+Tailwind for layout + responsive styles.
+
+📱 Global Layout
+
+Mobile-first, fits one hand scroll.
+
+Animated background (Autumn Leaves or Liquid Ether from react-bits).
+
+Persistent top bar: tiny heart icon + music toggle.
+
+Persistent bottom bar: “Next” button with sparkly pulse on tap.
+
+Background music toggle remembers state in localStorage.
+
+🎵 Audio
+
+Use instrumental Taylor Swift piano covers (e.g., Lover, Enchanted, You Are In Love).
+
+Volume low (≈ –20 dB).
+
+Loop softly, fade in/out between pages.
+
+Optional “Tap to play” overlay if autoplay is blocked.
+
+🗺️ Page Flow
+
+/ – Intro
+
+/starbucks
+
+/massage
+
+/ugg
+
+/lunch
+
+/dinner
+
+/pasta (includes 10-second hold secret trigger)
+
+/finale (secret unlocked page)
+
+Each page has:
+
+Animated headline
+
+Sweet message
+
+Optional “hint” accordion
+
+Sticky “Next” button → next route
+
+💌 Copy (shortened version)
+
+Intro
+
+Hi love. Ready for an adventure? 💌
+You’re about to follow a trail of tiny surprises. Don’t peek at your vouchers yet — you’ll open them as you go.
+Bring comfy shoes and your silly goose energy.
+
+Starbucks
+
+First sip, happy heart ☕
+Head to Starbucks and grab something cold and yum.
+You can open your first voucher now.
+
+Massage
+
+Breathe. Melt. Glow 💆‍♀️
+Find the massage parlour and claim your head & shoulder reset.
+Open your next voucher.
+
+UGG
+
+Soft steps for our getaway 🧦
+Pick the fluffiest pair that makes you smile.
+Think of our weekend away — you, me, soft socks, no alarms.
+
+Lunch
+
+Lunch with your goose 🦢
+Text me when you’re ready — you already have my location, love.
+
+Dinner
+
+Tonight, city lights and you 🌆
+Dinner at 5pm. Dress comfy-cute — think “Taylor Swift in love.”
+I’ll text you the spot later.
+
+Pasta (hidden unlock)
+
+Hands in flour, hearts full 🍝
+We’ve got a pasta-making class at Pasta & Cuore.
+But there’s something else... press and hold for 10 seconds.
+
+Finale (unlocked)
+
+My Maverick. My Fish. My Love ❤️
+Since that first kiss in a dingy city bar, I never imagined you’d be my Maverick — and me your silly goose.
+You make ordinary days sparkle. You calm my chaos. You are my favorite adventure.
+Can’t wait for our weekend away.
+— Your Goose 🦢
+
+🧠 Secret Logic
+
+Implement a useHoldGesture() hook:
+
+When user holds touch for 10s on /pasta, animate glowing progress ring.
+
+After 10s → auto-navigate to /finale.
+
+Add subtle “you found it!” animation.
+
+⚙️ Tech Implementation
+
+Next.js App Router
+
+Pages folder or route group: /quest/[step] if dynamic routing preferred.
+
+Reusable PageLayout component with background + music controls.
+
+Config-driven content (each page defined in QUEST_STEPS array).
+
+Deploy on Vercel.
+
+🎁 Optional Enhancements
+
+Confetti burst on final page.
+
+Animated heart cursor trail.
+
+Simple preload of all audio assets.
+
+Subtle progress dots in header (filled as you advance).
+
+✅ Deliverables
+
+Generate:
+
+Complete next.config.js, Tailwind config, and color theme.
+
+/components folder: PageLayout, AudioToggle, NextButton, HoldTrigger, AnimatedText.
+
+/public/audio with placeholder .mp3 loop.
+
+/app pages with copy above.
+
+Deploy-ready, optimized for mobile.
