@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 
 export default function AnimatedBackground() {
-  const leaves = Array.from({ length: 20 }).map((_, i) => ({
+  const leaves = Array.from({ length: 40 }).map((_, i) => ({
     id: i,
     x: Math.random() * 100,
-    delay: Math.random() * 5,
     duration: 10 + Math.random() * 10,
     size: 20 + Math.random() * 40,
   }));
@@ -26,7 +25,6 @@ export default function AnimatedBackground() {
           }}
           transition={{
             duration: leaf.duration,
-            delay: leaf.delay,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -40,8 +38,8 @@ export default function AnimatedBackground() {
                 leaf.id % 3 === 0
                   ? "hsl(var(--chart-5))"
                   : leaf.id % 3 === 1
-                  ? "hsl(var(--chart-2))"
-                  : "hsl(var(--chart-3))"
+                    ? "hsl(var(--chart-2))"
+                    : "hsl(var(--chart-3))"
               }, transparent)`,
               filter: "blur(2px)",
             }}

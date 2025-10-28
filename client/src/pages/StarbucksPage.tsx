@@ -9,8 +9,8 @@ export default function StarbucksPage() {
   const [, setLocation] = useLocation();
 
   return (
-    <PageLayout 
-      currentStep={1} 
+    <PageLayout
+      currentStep={1}
       totalSteps={8}
       bottomBar={<NextButton onClick={() => setLocation("/massage")} />}
     >
@@ -25,14 +25,15 @@ export default function StarbucksPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-chart-3/30 to-chart-5/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              Head to Starbucks and grab something cold and yum.
+              Head to Starbucks and grab something cold and yum. And later you
+              can have something hot and yum.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4 font-semibold">
-              You can open your first voucher now.
+              You can open your first card now.
             </p>
           </div>
 
-          <HintAccordion hint="Look for the Starbucks in the main shopping area. Get your favorite iced drink!" />
+          <HintAccordion hint="I know you know where it is... Get your favorite iced drink!" />
         </motion.div>
       </div>
     </PageLayout>

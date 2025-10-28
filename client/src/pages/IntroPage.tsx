@@ -8,8 +8,8 @@ export default function IntroPage() {
   const [, setLocation] = useLocation();
 
   return (
-    <PageLayout 
-      currentStep={0} 
+    <PageLayout
+      currentStep={0}
       totalSteps={8}
       bottomBar={
         <motion.div
@@ -17,7 +17,10 @@ export default function IntroPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <NextButton onClick={() => setLocation("/starbucks")} label="Begin Quest →" />
+          <NextButton
+            onClick={() => setLocation("/starbucks")}
+            label="Begin Quest"
+          />
         </motion.div>
       }
     >
@@ -32,10 +35,11 @@ export default function IntroPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-chart-5/30 to-chart-2/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              You're about to follow a trail of tiny surprises. Don't peek at your vouchers yet — you'll open them as you go.
+              You're about to follow a trail of tiny surprises. Don't peek at
+              your cards yet, you'll open them as you go.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Bring comfy shoes and your silly goose energy.
+              Bring your silly goose energy, i'll see you soon.
             </p>
           </div>
         </motion.div>

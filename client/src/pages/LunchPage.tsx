@@ -8,8 +8,8 @@ export default function LunchPage() {
   const [, setLocation] = useLocation();
 
   return (
-    <PageLayout 
-      currentStep={4} 
+    <PageLayout
+      currentStep={4}
       totalSteps={8}
       bottomBar={<NextButton onClick={() => setLocation("/dinner")} />}
     >
@@ -24,7 +24,8 @@ export default function LunchPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-chart-5/30 to-primary/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              Text me when you're ready — you already have my location, love.
+              Text me when you're ready, or find me on the map, you already have
+              my location!
             </p>
           </div>
         </motion.div>

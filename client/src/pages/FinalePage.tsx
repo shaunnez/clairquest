@@ -39,7 +39,9 @@ export default function FinalePage() {
   return (
     <PageLayout currentStep={7} totalSteps={8}>
       <div className="space-y-6">
-        <AnimatedHeadline>My Maverick. My Fish. My Love ❤️</AnimatedHeadline>
+        <AnimatedHeadline>
+          My Maverick. My Fish. My Person. My Love ❤️
+        </AnimatedHeadline>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -64,16 +66,19 @@ export default function FinalePage() {
             </div>
 
             <p className="text-base leading-relaxed text-foreground mb-4">
-              Since that first kiss in a dingy city bar, I never imagined you'd be my Maverick — and me your silly goose.
+              Since that first kiss, I never imagined you'd be my Maverick, and
+              me your silly goose.
             </p>
             <p className="text-base leading-relaxed text-foreground mb-4">
-              You make ordinary days sparkle. You calm my chaos. You are my favorite adventure.
+              You make ordinary days sparkle. You calm my chaos. You are my
+              favorite adventure.
             </p>
             <p className="text-base leading-relaxed text-foreground mb-6">
-              Can't wait for our weekend away.
+              I love every moment that we spend together, I can't wait for our
+              weekend away.
             </p>
             <p className="text-base leading-relaxed text-foreground font-display font-semibold text-center">
-              — Your Goose 🦢
+              - Your Goose 🦢
             </p>
           </div>
 
@@ -84,7 +89,7 @@ export default function FinalePage() {
             className="text-center"
           >
             <p className="text-sm text-muted-foreground">
-              You found the secret! ✨
+              You found the secret page! ✨
             </p>
           </motion.div>
         </motion.div>

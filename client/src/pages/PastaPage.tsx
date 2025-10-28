@@ -16,11 +16,7 @@ export default function PastaPage() {
   };
 
   return (
-    <PageLayout 
-      currentStep={6} 
-      totalSteps={8}
-      bottomBar={<NextButton onClick={() => setLocation("/finale")} label="Skip to End →" />}
-    >
+    <PageLayout currentStep={6} totalSteps={8}>
       <div className="space-y-6">
         <AnimatedHeadline>Hands in flour, hearts full 🍝</AnimatedHeadline>
 
@@ -32,16 +28,17 @@ export default function PastaPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-primary/20 to-chart-5/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              We've got a pasta-making class at Pasta & Cuore.
+              As an extra little fun thing, we've got a pasta-making class at
+              Pasta & Cuore in a few weeks!
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4 font-semibold">
-              But there's something else... press and hold for 10 seconds.
+              But there's something else... press and hold for 5 seconds.
             </p>
           </div>
 
-          <HintAccordion hint="Pasta & Cuore is in the Italian district. We'll learn to make fresh pasta together!" />
+          <HintAccordion hint="Honestly I really love making food with you, and getting messy. What a great combination! ;)" />
 
-          <HoldTrigger onComplete={handleHoldComplete} duration={10000} />
+          <HoldTrigger onComplete={handleHoldComplete} duration={5000} />
         </motion.div>
       </div>
     </PageLayout>

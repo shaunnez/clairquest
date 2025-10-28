@@ -9,8 +9,8 @@ export default function MassagePage() {
   const [, setLocation] = useLocation();
 
   return (
-    <PageLayout 
-      currentStep={2} 
+    <PageLayout
+      currentStep={2}
       totalSteps={8}
       bottomBar={<NextButton onClick={() => setLocation("/ugg")} />}
     >
@@ -28,11 +28,11 @@ export default function MassagePage() {
               Find the massage parlour and claim your head & shoulder reset.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4 font-semibold">
-              Open your next voucher.
+              Open your next card.
             </p>
           </div>
 
-          <HintAccordion hint="It's near the wellness center on the second floor. Time to relax and unwind!" />
+          <HintAccordion hint="It's down the far end. Helpful I know. Time to relax and unwind!... Once you find it :D" />
         </motion.div>
       </div>
     </PageLayout>

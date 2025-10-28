@@ -8,8 +8,8 @@ export default function DinnerPage() {
   const [, setLocation] = useLocation();
 
   return (
-    <PageLayout 
-      currentStep={5} 
+    <PageLayout
+      currentStep={5}
       totalSteps={8}
       bottomBar={<NextButton onClick={() => setLocation("/pasta")} />}
     >
@@ -24,10 +24,11 @@ export default function DinnerPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-chart-3/30 to-chart-2/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              Dinner at 5pm. Dress comfy-cute — think "Taylor Swift in love."
+              Dinner at 5pm. The fact your as much of a foodie as me, absolutely
+              delicious. Just like you.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              I'll text you the spot later.
+              Lets eat, drink, smooch and laugh. I love you.
             </p>
           </div>
         </motion.div>

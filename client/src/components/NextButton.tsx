@@ -7,7 +7,7 @@ interface NextButtonProps {
   label?: string;
 }
 
-export default function NextButton({ onClick, label = "Continue →" }: NextButtonProps) {
+export default function NextButton({ onClick, label = "Continue" }: NextButtonProps) {
   return (
     <div className="relative">
       <motion.div

@@ -9,8 +9,8 @@ export default function UggPage() {
   const [, setLocation] = useLocation();
 
   return (
-    <PageLayout 
-      currentStep={3} 
+    <PageLayout
+      currentStep={3}
       totalSteps={8}
       bottomBar={<NextButton onClick={() => setLocation("/lunch")} />}
     >
@@ -28,11 +28,11 @@ export default function UggPage() {
               Pick the fluffiest pair that makes you smile.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Think of our weekend away — you, me, soft socks, no alarms.
+              Think of our weekend away, you, me, comfort, and lots of laughter.
             </p>
           </div>
 
-          <HintAccordion hint="The UGG store is on the ground floor. Look for the coziest slippers or socks!" />
+          <HintAccordion hint="I'm pretttyyy sure you know where this is too. Near the food court and jewellery stores. I may have forgot your shoe size, thus the voucher. Bok bok. " />
         </motion.div>
       </div>
     </PageLayout>
