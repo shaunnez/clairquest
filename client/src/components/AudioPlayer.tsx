@@ -9,7 +9,7 @@ interface AudioPlayerProps {
 
 export default function AudioPlayer({ onPlayStateChange }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showTapToPlay, setShowTapToPlay] = useState(true);
+  const [showTapToPlay, setShowTapToPlay] = useState(false);
   const soundRef = useRef<Howl | null>(null);
   const hasAttemptedAutoplay = useRef(false);
   const toggleMusic = () => {
