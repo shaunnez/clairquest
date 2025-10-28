@@ -9,7 +9,7 @@ export default function AnimatedBackground() {
   }));
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-20 z-0">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-60 z-0">
       {leaves.map((leaf) => (
         <motion.div
           key={leaf.id}
