@@ -20,7 +20,7 @@ export default function PageLayout({
     <div className="min-h-screen flex flex-col relative">
       <AnimatedBackground />
 
-      <header className="fixed top-0 left-0 right-0 h-14 backdrop-blur-md bg-background/80 border-b border-border/50 z-40">
+      <header className="fixed top-0 left-0 right-0 h-14  border-b border-border/50 z-40">
         <div className="h-full max-w-md mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Heart
@@ -31,7 +31,11 @@ export default function PageLayout({
 
           <ProgressDots total={totalSteps} current={currentStep} />
 
-          <AudioPlayer />
+          <AudioPlayer
+            onPlayStateChange={(playing) =>
+              console.log("Music playing:", playing)
+            }
+          />
         </div>
       </header>
 
@@ -40,7 +44,7 @@ export default function PageLayout({
       </main>
 
       {bottomBar && (
-        <footer className="left-0 right-0 backdrop-blur-md bg-background/80 border-t border-border/50 z-40">
+        <footer className="left-0 right-0 backdrop-blur-md bg-background/80 border-t border-border/50 z-30">
           <div className="max-w-md mx-auto px-4 py-4">{bottomBar}</div>
         </footer>
       )}

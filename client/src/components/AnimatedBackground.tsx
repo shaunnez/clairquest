@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function AnimatedBackground() {
-  const leaves = Array.from({ length: 40 }).map((_, i) => ({
+  const leaves = Array.from({ length: 100 }).map((_, i) => ({
     id: i,
     x: Math.random() * 100,
     duration: 10 + Math.random() * 10,
