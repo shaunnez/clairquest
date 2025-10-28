@@ -17,9 +17,7 @@ export default function AudioPlayer({ onPlayStateChange }: AudioPlayerProps) {
     const shouldPlay = savedState === "playing";
 
     soundRef.current = new Howl({
-      src: [
-        "https://www.dropbox.com/scl/fi/jkdxu1anqbjk71y2oouz4/background.mp3?rlkey=hebtbxs98xl9hc28ndsxulvjz&e=1&st=isdrb1cb&dl=1",
-      ],
+      src: ["./audio/background.mp3"],
       loop: true,
       volume: 0.2,
       html5: true,
