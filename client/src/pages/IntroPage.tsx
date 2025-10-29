@@ -40,12 +40,12 @@ export default function IntroPage() {
               your cards yet, you'll open them as you go.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Bring your silly goose energy and head over to lynn mall. I know
-              your wearing your fish socks like a good girl.
+              Bring your silly goose energy. I know your wearing your fish socks
+              like a good girl.
             </p>
           </div>
 
-          <HintAccordion hint="You can turn the music off if you'd like - top right corner." />
+          <HintAccordion hint="You can turn the music off if you'd like - top right corner. When your ready, click begin quest." />
         </motion.div>
       </div>
     </PageLayout>

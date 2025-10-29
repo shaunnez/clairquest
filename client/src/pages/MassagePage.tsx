@@ -29,8 +29,9 @@ export default function MassagePage() {
               claim your head & shoulder reset.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Open your next card, they should be expecting you. Worst case if
-              they are fully booked, you can use it another time. No stress.
+              Open your next card, it's a walk in place. Worst case if they are
+              fully booked, you can use it another time. No stress. Today is
+              about you!
             </p>
           </div>
 
