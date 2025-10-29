@@ -29,11 +29,11 @@ export default function StarbucksPage() {
               can have something hot and yum.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4 font-semibold">
-              You can open your first card now.
+              Before you buy anything, you can open your first card now.
             </p>
           </div>
 
-          <HintAccordion hint="I know you know where it is... Get your favorite iced drink!" />
+          <HintAccordion hint="When your ready, you can click continue." />
         </motion.div>
       </div>
     </PageLayout>

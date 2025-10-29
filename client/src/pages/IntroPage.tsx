@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import PageLayout from "@/components/PageLayout";
 import AnimatedHeadline from "@/components/AnimatedHeadline";
 import NextButton from "@/components/NextButton";
+import HintAccordion from "@/components/HintAccordion";
 
 export default function IntroPage() {
   const [, setLocation] = useLocation();
@@ -39,9 +40,12 @@ export default function IntroPage() {
               your cards yet, you'll open them as you go.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Bring your silly goose energy, i'll see you soon.
+              Bring your silly goose energy and head over to lynn mall. I know
+              your wearing your fish socks like a good girl.
             </p>
           </div>
+
+          <HintAccordion hint="You can turn the music off if you'd like - top right corner." />
         </motion.div>
       </div>
     </PageLayout>

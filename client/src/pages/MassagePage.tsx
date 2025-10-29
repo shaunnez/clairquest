@@ -25,10 +25,12 @@ export default function MassagePage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-primary/20 to-chart-3/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              Find the massage parlour and claim your head & shoulder reset.
+              I know you've got a sore neck, so find the massage parlour and
+              claim your head & shoulder reset.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4 font-semibold">
-              Open your next card.
+              Open your next card once your there. After your done, click
+              continue.
             </p>
           </div>
 

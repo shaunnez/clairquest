@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import PageLayout from "@/components/PageLayout";
 import AnimatedHeadline from "@/components/AnimatedHeadline";
 import NextButton from "@/components/NextButton";
+import HintAccordion from "@/components/HintAccordion";
 
 export default function DinnerPage() {
   const [, setLocation] = useLocation();
@@ -24,13 +25,16 @@ export default function DinnerPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-chart-3/30 to-chart-2/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              Dinner at 5pm. The fact your as much of a foodie as me, absolutely
-              delicious. Just like you.
+              Dinner at 5pm. The fact your as much of a foodie as me...
+              absolutely delicious. Just like you.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Lets eat, drink, smooch and laugh. I love you.
+              Lets eat, drink, smooch and laugh. I love you. Until then, know
+              I'm always thinking of you.
             </p>
           </div>
+
+          <HintAccordion hint="Feel free to click continue, you've been such a good girl. I'm proud of you." />
         </motion.div>
       </div>
     </PageLayout>

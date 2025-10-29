@@ -25,14 +25,16 @@ export default function UggPage() {
         >
           <div className="rounded-2xl bg-gradient-to-br from-chart-2/30 to-chart-4/20 p-6 backdrop-blur-md">
             <p className="text-base leading-relaxed text-foreground">
-              Pick the fluffiest pair that makes you smile.
+              I know the socks are cute, but you deserve more comfortable
+              attire. Pick the fluffiest pair that makes you smile.
             </p>
             <p className="text-base leading-relaxed text-foreground mt-4">
-              Think of our weekend away, you, me, comfort, and lots of laughter.
+              Think of our weekend away, you, me, pure comfort, and lots of
+              laughter. I cannot wait.
             </p>
           </div>
 
-          <HintAccordion hint="I'm pretttyyy sure you know where this is too. Near the food court and jewellery stores. I may have forgot your shoe size, thus the voucher. Bok bok. " />
+          <HintAccordion hint="I'm pretttyyy sure you know where the UGG popup is. Near the food court and jewellery stores. I may have forgot your shoe size, thus the voucher. Bok bok. Chuck them on, and click continue when you've got them" />
         </motion.div>
       </div>
     </PageLayout>
