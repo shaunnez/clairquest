@@ -28,9 +28,9 @@ export default function MassagePage() {
               I know you've got a sore neck, so find the massage parlour and
               claim your head & shoulder reset.
             </p>
-            <p className="text-base leading-relaxed text-foreground mt-4 font-semibold">
-              Open your next card once your there. After your done, click
-              continue.
+            <p className="text-base leading-relaxed text-foreground mt-4">
+              Open your next card, they should be expecting you. Worst case if
+              they are fully booked, you can use it another time. No stress.
             </p>
           </div>
 

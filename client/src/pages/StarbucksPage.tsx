@@ -33,7 +33,7 @@ export default function StarbucksPage() {
             </p>
           </div>
 
-          <HintAccordion hint="When your ready, you can click continue." />
+          <HintAccordion hint="Have your drink, relax, and click continue when your ready to proceed." />
         </motion.div>
       </div>
     </PageLayout>
